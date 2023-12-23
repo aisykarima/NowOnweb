@@ -1,0 +1,464 @@
+/* NAV*/
+.navbar {
+  font-family: "Vollkorn SC";
+  font-size: 17px;
+}
+body {
+  min-height: 2000px;
+}
+.nav-item {
+  padding-right: 1em;
+}
+.navbar-icon {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* AKHIR NAV */
+
+/* HERO */
+#carouselExampleCaptions .carousel-item {
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+#carouselExampleCaptions .img-wrapper img{
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+  height: 622px;
+}
+
+.carousel-indicators .active {
+  background: white !important;
+}
+
+#carouselExampleCaptions .carousel-indicators button {
+ width: 8px;
+ height: 8px;
+ border-radius: 100%;
+ border: 1px solid white;
+ background: transparent;
+ margin-bottom: 13px;
+}
+/* AKHIR HERO */
+
+/* layanan */
+.judul {
+  font-family: "Vollkorn SC";
+  line-height: 1.6;
+  font-weight: bold;
+  opacity: 70%;
+  color: #000000;
+}
+
+h2 {
+  font-family: "Vollkorn SC";
+  line-height: 1.6;
+  font-weight: bold;
+  opacity: 80%;
+}
+.isikonten {
+  font-family: "Mukta";
+  font-size: 18px;
+}
+.isikonten2 {
+  font-family: "Mukta";
+  font-size: 13px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #0a010a;
+  line-height: 1.6;
+  color: #5d5a88;
+  opacity: 70%;
+}
+
+.list {
+  text-align: start;
+  font-family: "Volkhov";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 0.5;
+  color: #5d5a88d2;
+  opacity: 100%;
+}
+
+#gambarIcon {
+  margin-right: 1em;
+}
+.h5-judul {
+  font-family: "Vollkorn SC";
+}
+.listBenefit li {
+  list-style-image: url("Check\ Circle.svg");
+  margin: auto;
+}
+
+.iconlist {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.harga {
+  font-family: "Vollkorn SC";
+  line-height: 1.6;
+  color: #65b791;
+}
+
+.col h2 {
+  font-family: 'Vollkorn SC', serif; font-size: 26px;
+}
+.col-9 {
+  font-family: 'Mukta', sans-serif; font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+}
+.col h2 {
+  font-family: 'Vollkorn SC', serif; font-size: 26px;
+}
+
+i {
+  color: #5d5a88;
+}
+
+.fa-check-circle {
+  color: #65b791;
+}
+
+/* layanan */
+#carouselExampleControls .carousel-inner {
+  display: flex;
+}
+
+#carouselExampleControls .carousel-item {
+  flex: 0 0 33.3333%; /* Setiap item memiliki lebar 33.3333% dari container (tiga item per baris) */
+  margin-right: 0.5rem; /* Tambahkan margin untuk memberikan jarak antar item */
+}
+
+@media (max-width: 768px) {
+  #carouselExampleControls .carousel-item {
+    flex: 0 0 100%; /* Setiap item memiliki lebar 100% dari container (satu item per baris) pada layar kecil */
+    margin-right: 0; /* Tidak ada margin di kanan pada layar kecil */
+  }
+}
+
+#carouselExampleControls .carousel-control-prev-icon,
+#carouselExampleControls .carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: #444444;
+}
+
+#carouselExampleControls .carousel-control-prev-icon {
+  margin-left: -150px;
+}
+
+#carouselExampleControls .carousel-control-next-icon {
+  margin-right: -150px;
+}
+
+@media (min-width: 992px) {
+  /* Show 4th slide on lg if col-lg-4 */
+.carousel-inner .active.col-lg-4.carousel-item+ #carouselExampleControls .carousel-item+ .carousel-item+ #carouselExampleControls .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%; /* Ganti ini dengan javascript di masa depan */
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Show 3rd slide on md if col-md-6 */
+.carousel-inner .active.col-md-6.carousel-item+ #carouselExampleControls .carousel-item+ #carouselExampleControls .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%; /* Ganti ini dengan javascript di masa depan */
+    z-index: -1; /* Perbaikan: z-index tidak memerlukan persen */
+    display: block;
+    visibility: visible;
+  }
+}
+
+
+/* MD */
+@media (min-width: 768px) {
+  #carouselExampleControls .carousel-item {
+    margin-right: 0;
+  }
+  /* show 2 items */
+  #carouselExampleControls .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  #carouselExampleControls .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  #carouselExampleControls .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none;
+  }
+  #carouselExampleControls .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  #carouselExampleControls .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  #carouselExampleControls .carousel-item-next.carousel-item-left + .carousel-item,
+  #carouselExampleControls .carousel-item-next.carousel-item-left + #carouselExampleControls .carousel-item + #carouselExampleControls .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  #carouselExampleControls .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  #carouselExampleControls .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  #carouselExampleControls .carousel-item-prev.carousel-item-right + .carousel-item,
+  #carouselExampleControls .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* LG */
+@media (min-width: 992px) {
+  /* show 3rd of 3 item slide */
+#carouselExampleControls .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+#carouselExampleControls .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+#carouselExampleControls .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  #carouselExampleControls .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction */
+  #carouselExampleControls .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* animasi button */
+.btn-green {
+  color: #ffffff;
+  background-color: #65b791;
+  border-color: #65b791;
+  font-family: Mukta;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.btn-green:hover {
+  color: #ffff;
+  background-color: #875a85;
+  border-color: #875a85;
+  animation: pulse 1s infinite;
+  transition: 0.3s;
+}
+.btn-green:focus,
+.btn-green.focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 183, 145, 0.5);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* animasi card */
+#carouselExampleControls .card-body {
+  display: block;
+  position: relative;
+  /* max-width: 262px; */
+  background-color: #ffff;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #875a85f8;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(50);
+  }
+}
+
+#carouselExampleControls .card-body:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+  .judul {
+    color: #ffffff;
+    opacity: 100%;
+  }
+  .isikonten2 {
+    color: #ffffff;
+    opacity: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+  .fa-check-circle {
+    color: white;
+  }
+  .btn-green {
+    color: #010000;
+    background-color: #ffff;
+    border-color: #ffff;
+    font-family: Mukta;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+}
+/* Akhir layanan */
+
+/* GALERY */
+.gallery-img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1); 
+}
+
+#recipeCarousel .carousel-control-prev {
+  margin-left: -65px; 
+}
+
+#recipeCarousel .carousel-control-next {
+  margin-right: -65px; 
+}
+/*AKHIR GALERY*/
+
+
+/*Control Arrow*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px; 
+}
+/*Control Arrow*/
+
+
+/*FAQ*/
+.collapsed-img{
+  float: right;
+}
+/*AKHIR FAQ*/
+
+
+/*TESTI*/
+.col {
+  font-family: 'Vollkorn SC', serif; font-size: 26px;
+}
+
+.testimonial-card {
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  font-family: 'Mukta', sans-serif; font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.testimonial-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-username {
+  font-family: 'Volkhov';font-size: 15px; 
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.testimonial-rate {
+  color: #FFD700;
+  line-height: 1px;
+}
+
+#testimonialCarousel .carousel-control-prev {
+  margin-left: -65px; 
+}
+
+#testimonialCarousel .carousel-control-next {
+  margin-right: -65px; 
+}
+/*AKHIR TESTI*/
+
+
+/*FOOTER*/
+.listFooter {
+  list-style: none;
+  margin-left: 0px;
+}
+
+#button-addon1 {
+  color: #5d5a88;
+}
+
+i {
+  color: #5d5a88;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+/*AKHIR FOOTER*/

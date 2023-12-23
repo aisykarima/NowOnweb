@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Now-On</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn SC" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Volkhov' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Frame 1.svg" alt="Bootstrap" width="85" height="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false"> Layanan </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Personal Photo Profile</a></li>
+                <li><a class="dropdown-item" href="#">Self Potrait Photo</a></li>
+                <li><a class="dropdown-item" href="#">Graduation Photo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lokasi">Kontak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="navbar-icon" href="#" target="_blank">
+                <img src="icon basket.svg" alt="Bootstrap" width="30" height="30" />
+              </a>
+              <a class="navbar-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                <img src="icon profile.svg" alt="Bootstrap" width="30" height="30" />
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Log in/Sign up</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Hero image -->
+    <section id="hero-image">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img-wrapper">
+          <img src="self potrait.jpg" class="d-block w-100 img-fluid" alt="gambar1" style="min-height: auto; max-height: 622px;"/>
+          </div>
+          <div class="carousel-caption d-none d-md-block" style="text-align: center; margin-bottom: 30px;">
+            <h5>🎉 Promo Ulang Tahun</h5>
+            <p>Jadikan hari ulang tahun lebih berkesan dengan foto yang indah.
+              <br>Gratis kanvas foto untuk setiap sesi foto ulang tahun yang diambil!
+              <br><i style="color: #65B791;">Syarat dan Ketentuan Berlaku.</i>
+            </p>
+            <a href="#" type="button" class="btn btn-primary" style="background-color: #65B791; border: hidden;">Pesan Sekarang
+              <img src="icon arrow right.png" alt="pesan" width="15" height="12" style="color: white;"/>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-wrapper">
+          <img src="gambar.jpg" class="d-block w-100 img-fluid" alt="gambar2" style="min-height: auto; max-height: 622px;"/>
+          </div>
+          <div class="carousel-caption d-none d-md-block" style="text-align: left; margin-bottom: 295px; color: black;">
+            <h5>✨ Foto Keluarga</h5>
+            <p>Abadikan kebersamaan dengan sesi foto keluarga berkesan.
+              <br>Diskon 20% untuk paket keluarga hingga akhir bulan ini!
+            </p>
+            <a href="#" type="button" class="btn btn-primary" style="background-color: #65B791; border: hidden;">Pesan Sekarang
+              <img src="icon arrow right.png" alt="pesan" width="15" height="12" style="color: white;"/>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-wrapper">
+          <img src="wisuda.jpg" class="d-block w-100 img-fluid" alt="gambar3"  style="min-height: auto; max-height: 622px;"/>
+          </div>
+          <div class="carousel-caption d-none d-md-block" style="text-align: right; margin-bottom: 75px;">
+            <h5>🎓 Graduation</h5>
+            <p>Rayakan keberhasilan dan prestasi dengan sesi foto khusus graduasi.
+              <br>Paket spesial untuk lulusan baru, hanya bulan ini!
+              <br><i style="color: #65B791;">Syarat dan Ketentuan Berlaku.</i>
+            </p>
+            <a href="#" type="button" class="btn btn-primary" style="background-color: #65B791; border: hidden;">Pesan Sekarang
+              <img src="icon arrow right.png" alt="pesan" width="15" height="12" style="color: white;"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </section>
+    <!-- Akhir hero image -->
+   
+    <!-- Tentang -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center p-4">
+          <div class="col">
+            <h2>Tentang</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-9">
+            <p>Now On Photo studio telah berdiri sejak 2017, mengabadikan setiap momen berharga masa kini untuk masa depan. 
+            Now On Photo Studio berkomitmen untuk selalu ada di garis depan dan terus berinovasi dalam bidang fotografi 
+            untuk memenuhi ekspektasi yang berkembang dari klien. Studio foto ini menyediakan jasa fotografi profesional yang 
+            menghasilkan foto berkualitas dengan harga yang bersahabat. Now On Photo Studio menawarkan berbagai layanan 
+            fotografi mulai dari self potrait, family photography dan masih banyak lainnya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Tentang -->
+
+    <!-- Galery -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row text-center p-4">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center" >
+                    <div class="col-md-2">
+                      <img src="galeri 12.jpg" class="img-fluid gallery-img" alt="Gallery 1">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 2.png" class="img-fluid gallery-img" alt="Gallery 2">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 13.jpg" class="img-fluid gallery-img" alt="Gallery 3">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 4.png" class="img-fluid gallery-img" alt="Gallery 4">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 5.png" class="img-fluid gallery-img" alt="Gallery 5">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-2">
+                      <img src="galeri 6.jpg" class="img-fluid gallery-img" alt="Gallery 1">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 7.jpg" class="img-fluid gallery-img" alt="Gallery 2">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 8.jpg" class="img-fluid gallery-img" alt="Gallery 3">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 11.jpg" class="img-fluid gallery-img" alt="Gallery 4">                      
+                    </div>
+                    <div class="col-md-2">
+                      <img src="galeri 10.jpg" class="img-fluid gallery-img" alt="Gallery 5">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galery -->
+    
+    <!-- Layanan -->
+    <section id="layanan">
+      <div class="container text-center my-3">
+        <div class="row text-center p-4">
+          <div class="col">
+            <h2 class="font-weight-light">Layanan</h2>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto">
+          <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+              <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4 active">
+                <div class="card card-body shadow-sm">
+                  <h5 class="card-title judul m-3">PERSONAL PHOTO PROFILE</h5>
+                  <p class="card-text isikonten2">Sesi pemotretan di studio indoor untuk membuat foto profil terbaik dari dirimu.</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>1 background, 1 kostum pribadi</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Durasi foto 30 menit</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Maksimal 1 orang</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free photo retouching</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free 2 cetak foto 4R</p>
+                  <p class="card-text harga fs-3">$15</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <a href="#" class="btn btn-green btn-lg shadow">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card card-body shadow-sm">
+                  <h5 class="card-title judul m-3">SELF POTRAIT PHOTO STUDIO</h5>
+                  <p class="card-text isikonten2">Sesi pemotretan mandiri untuk mengabadikan momen bersama orang tersayang.</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>1 background, 1 kostum pribadi</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Durasi foto 30 menit</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Maksimal 4 orang</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free photo retouching</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free 2 cetak foto 4R</p>
+                  <p class="card-text harga fs-3">$10</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <a href="#" class="btn btn-green btn-lg shadow">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card card-body shadow-sm">
+                  <h5 class="card-title judul m-3">GRADUATION PHOTO STUDIO</h5>
+                  <p class="card-text isikonten2">Sesi pemotretan momen wisuda bersama keluarga terdekat.</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>1 background, 2 kostum pribadi</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Durasi foto 30 menit</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Maksimal 7 orang</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free photo retouching</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free 2 cetak foto 4R</p>
+                  <p class="card-text harga fs-3">$18</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <a href="#" class="btn btn-green btn-lg shadow">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card card-body shadow-sm">
+                  <h5 class="card-title judul m-3">WEDDING DAY PHOTO</h5>
+                  <p class="card-text isikonten2">Sesi pemotretan di studio indoor untuk membuat foto profil terbaik dari dirimu.</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>1 background, 1 kostum pribadi</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Durasi foto 30 menit</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Maksimal 1 orang</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free photo retouching</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free 2 cetak foto 4R</p>
+                  <p class="card-text harga fs-3">$15</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <a href="#" class="btn btn-green btn-lg shadow">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card card-body shadow-sm">
+                  <h5 class="card-title judul m-3">FAMILY PHOTO STUDIO</h5>
+                  <p class="card-text isikonten2">Sesi pemotretan mandiri untuk mengabadikan momen bersama orang tersayang.</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>1 background, 1 kostum pribadi</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Durasi foto 30 menit</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Maksimal 4 orang</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free photo retouching</p>
+                  <p class="card-text list ms-2"><i class="fa fa-check-circle fa-xl" style="margin-top: 0.5em; margin-right: 0.5em"></i>Free 2 cetak foto 4R</p>
+                  <p class="card-text harga fs-3">$10</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <a href="#" class="btn btn-green btn-lg shadow">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir layanan -->
+
+    <!-- Lokasi-->
+    <section id="lokasi">
+      <div class="container">
+        <div class="row text-center p-4">
+          <div class="col">
+            <h2>Lokasi</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4" id="gambarGedung">
+            <img src="gambar now-on.svg" class="img-fluid" alt="gambar gedung now-on" style="height: 250px" />
+          </div>
+          <div class="col-7">
+            <h5 class="h5-judul m-4">Alamat</h5>
+            <p class="isikonten m-4"><img src="icon location.svg" alt="gambar lokasi" style="width: 24px; height: 24px" id="gambarIcon" />2JWB+G22, Jl. Veteran, Ketawanggede, Kota Malang, Jawa Timur 65113</p>
+            <h5 class="h5-judul m-4">Kontak</h5>
+            <p class="isikonten m-4"><img src="icon email.svg" alt="gambar email" style="width: 24px; height: 24px" id="gambarIcon" />now-on@gmail.com</p>
+            <p class="isikonten m-4"><img src="icon telephone.svg" alt="gambar telpon" style="width: 24px; height: 24px" id="gambarIcon" />+62 098 1917 2675</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Lokasi-->
+
+    <!-- Faq -->
+    <section id="faq">
+      <div class="container">
+        <div class="row text-center p-4">
+          <div class="col-">
+            <h2>FAQs</h2>
+          </div>
+        </div>
+    <div id="faqs">
+      <div class="row justify-content-center text-start">
+        <div class="col-12">
+          
+      <div class="card" style="border: hidden; background-color: rgb(180, 180, 180);">
+        <div class="card-header col-12" style="background-color: white;">
+          <a class="collapsed btn col-12 text-start" data-bs-toggle="collapse" href="#collapseOne">
+            Bagaimana cara melakukan pesanan?
+            <div class="collapsed-img text-align">
+            <img src="icon see less.png" alt="FAQs" width="15" height="8" />
+            </div>
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#faqs">
+          <div class="card-body" style="float: left; margin-left: 26px;">
+            <p>1. Buka situs web studio foto.
+              <br>2. Pilih layanan atau paket yang diinginkan.
+              <br>3. Isi formulir pemesanan dengan detail yang diperlukan.
+              <br>4. Lakukan pembayaran online.
+              <br>5. Terima konfirmasi pemesanan melalui email atau platform lainnya.
+              <br>6. Persiapkan diri dan datang tepat waktu untuk sesi foto.
+              <br>Pastikan untuk membaca syarat dan ketentuan serta menghubungi studio foto jika ada pertanyaan lebih lanjut.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="border: hidden; background-color: rgb(180, 180, 180);">
+        <div class="card-header col-12" style="background-color: white;">
+          <a class="collapsed btn col-12 text-start" data-bs-toggle="collapse" href="#collapseTwo">
+            Kapan saya akan menerima foto saya?
+            <div class="collapsed-img text-align">
+              <img src="icon see less.png" alt="FAQs" width="15" height="8" />
+            </div>
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#faqs">
+          <div class="card-body" style="float: left; margin-left: 26px;">
+            <p>Foto akan diberikan 1-2 jam setelah proses pemilihan foto dan retouching apabila ada request dari customer.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card" style="border: hidden; background-color: rgb(180, 180, 180);">
+        <div class="card-header col-12" style="background-color: white;">
+          <a class="collapsed btn col-12 text-start" data-bs-toggle="collapse" href="#collapseThree">
+            Bagaimana jika saya perlu menjadwal ulang pemotretan saya?
+            <div class="collapsed-img text-align">
+              <img src="icon see less.png" alt="FAQs" width="15" height="8" />
+            </div>
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#faqs">
+          <div class="card-body" style="float: left; margin-left: 26px;">
+            <p>1. Masuk ke halaman profile user.
+              <br>2. Akses halaman pesanan anda.
+              <br>3. Cari opsi "Reschedule".
+              <br>4. Pilih jadwal baru dan konfirmasi perubahan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="border: hidden; background-color: rgb(180, 180, 180);">
+        <div class="card-header col-12 text-start" style="background-color: white;">
+          <a class="collapsed btn col-12 text-start" data-bs-toggle="collapse" href="#collapseFour">
+            Bagaimana jika saya membatalkan pesanan?
+            <div class="collapsed-img text-align">
+              <img src="icon see less.png" alt="FAQs" width="15" height="8" />
+            </div>
+          </a>
+        </div>
+        <div id="collapseFour" class="collapse" data-bs-parent="#faqs">
+          <div class="card-body" style="float: left; margin-left: 26px;">
+            <p>1. Masuk ke halaman profile user.
+              <br>2. Akses halaman pesanan anda.
+              <br>3. Cari opsi "Batalkan Pesanan".
+              <br>4. Berikan alasan anda melakukan pembatalan.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+        </div>
+      </div>
+    </div>
+      </section>
+      <!-- Akhir Faq -->
+
+    <!-- Testimoni -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row text-center p-4">
+          <div class="col-12">
+            <h2>Ulasan Pengguna</h2>
+          </div>
+        </div>
+        <div id="testimonialCarousel" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <img src="Image Placeholder.png" class="testimonial-img" alt="User 1" style="float:left;">
+                    <p class="testimonial-username">Sejeong kim</p>
+                    <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <p>“Layanan yang diberikan sangat sesuai harapan saya, self potrait membuat saya bebas berekspresi, semua hasil foto bisa saya dapatkan tanpa adanya biaya tambahan.”</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <img src="Image Placeholder (1).png" class="testimonial-img" alt="User 2" style="float:left;">
+                    <p class="testimonial-username">Juna Bukan Chef</p>
+                    <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <p>“Layanan personal photo profile disini sangat  memuaskan, photografer mengarahkan pose dan detail pada foto, harga bersahabat dengan kualitas mantap.”</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <img src="Image Placeholder (2).png" class="testimonial-img" alt="User 3" style="float:left;">
+                    <p class="testimonial-username">Super papa</p>
+                    <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    <p>“Mengabadikan momen keluarga dengan foto merupakan agenda tahunan saya. Now on merupakan pilihan saya sejak dulu hingga sekarang, setiap kesini selalu saja ada inovasi-inovasi baru yang ditawarkan”</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <img src="Image Placeholder (3).png" class="testimonial-img" alt="User 4" style="float:left;">
+                    <p class="testimonial-username">Minji ga minyi</p>
+                    <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <p>“Seru banget self potrait bareng temen-temen, tapi kalo ramean rasanya 30 menit ga cukup, kadang mau extend tp dibelakang ada antrian orang lainn, now-on the best lah!””</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <img src="Image Placeholder (4).png" class="testimonial-img" alt="User 5" style="float:left;">
+                    <p class="testimonial-username">Mas bayu</p>
+                    <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <p>“Tempatnya nyaman, pelayanan ramah dan profesional, bikin betah apalagi ruangan full ac semua jadi gamau pulang rasanya”</p>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img src="Image Placeholder (6).png" class="testimonial-img" alt="User 6" style="float:left;">
+                  <p class="testimonial-username">kang cakep</p>
+                  <p class="testimonial-rate">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                  <p>“mantaplah, buat now-on semoga terus berkembang dengan inovasi-inovasi barunya, terima kasih juga sudah memposting foto saya disini hehehe”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Testimoni -->
+
+  <!-- Footer -->
+<footer class="bg-white">
+  <div class="container py-5">
+    <div class="row py-4">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="Frame 1.svg" alt="logo now-on" width="180" class="mb-3">
+        <p class="font-italic text-muted">Tangkap Momen, Kapanpun, Mudah: Now-On, Tempat Pemesanan Studio Foto Onlinemu!</p>
+        <ul class="list-inline mt-4">
+          <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-envelope"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Now-On</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="text-muted">Beranda</a></li>
+          <li class="mb-2"><a href="#about" class="text-muted">Tentang</a></li>
+          <li class="mb-2"><a href="#layanan" class="text-muted">Layanan</a></li>
+          <li class="mb-2"><a href="#lokasi" class="text-muted">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Hubungi Kami</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="text-muted">Instagram</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">Twitter/X</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">E-mail</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">Whatsapp</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Membership</h6>
+        <p class="text-muted mb-4">Daftar menjadi member Now-On untuk mendapatkan promo menarik!</p>
+        <div class="p-1 rounded border">
+          <div class="input-group">
+            <input type="email" placeholder="Masukkan alamat email" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+            <div class="input-group-append">
+              <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyrights -->
+  <div class="bg-light py-4">
+    <div class="container text-center">
+      <p class="text-muted mb-0 py-2">© 2023 Now-On All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- Akhir footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
